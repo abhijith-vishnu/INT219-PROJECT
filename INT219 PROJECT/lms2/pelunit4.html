@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<title>Communication Skill unit 4</title>
+</title>
+<script>
+function calc()
+{
+var reply=window.confirm("Are you sure you want to submit?");
+if(reply){
+var s=0;var p;var c;
+if(document.getElementById("c1").checked) 
+{s=s+1;}
+if(document.getElementById("b2").checked) 
+{s=s+1;}
+if(document.getElementById("a3").checked) 
+{s=s+1;}
+if(document.getElementById("a4").checked) 
+{s=s+1;}
+if(document.getElementById("c5").checked)
+ {s=s+1;}
+ if(document.getElementById("a6").checked)
+ {s=s+1;}
+ if(document.getElementById("d7").checked)
+ {s=s+1;}
+ if(document.getElementById("b8").checked)
+ {s=s+1;}
+ if(document.getElementById("d9").checked)
+ {s=s+1;}
+ if(document.getElementById("b10").checked)
+ {s=s+1;}
+  p=s*10;
+if(s==10)
+{c="Excellent!!";}
+else if(s<10 && s>=9)
+{c="Very Good!!";}
+else if(s<9 && s>=8)
+{c="Good!!";}
+else if(s<8 && s>=7)
+{c="Average!!";}
+else{c="Poor!! Work hard!!";}
+window.alert(c+" Your score is "+p+"%");
+window.open("practice.html","_self");
+}
+}
+</script>
+</head>
+<body bgcolor="#38404f" style="color:white;">
+<h1>Communication Skill unit 4</h1><br>
+<hr>
+<form>
+<b>1. Arrange the words given below in a meaningful sequence.
+1. Key	2. Door	3. Lock
+4. Room	5. Switch on</b><br>
+<input type="radio" name="q1" id="a1">1,2,3,4,5<br>
+<input type="radio" name="q1" id="b1">5,4,3,2,1<br>
+<input type="radio" name="q1" id="c1">1,3,2,4,5<br>
+<input type="radio" name="q1" id="d1">None of These<br><br><br>
+<b>2. A, P, R, X, S and Z are sitting in a row. S and Z are in the centre. A and P are at the ends. R is sitting to the left of A. Who is to the right of P ?</b><br>
+<input type="radio" name="q2" id="a2">A<br>
+<input type="radio" name="q2" id="b2">X<br>
+<input type="radio" name="q2" id="c2">S<br>
+<input type="radio" name="q2" id="d2">Z<br><br><br>
+<b>3. Find the correctly spelt words.</b><br> 
+<input type="radio" name="q3" id="a3">Efficient<br>
+<input type="radio" name="q3" id="b3">	Treatmeant<br>
+<input type="radio" name="q3" id="c3">Beterment<br>
+<input type="radio" name="q3" id="d3">	Employd<br><br><br>
+<b>4.  Find the correctly spelt words.?<br>	 	
+<input type="radio" name="q4" id="a4">Pesanger<br>
+<input type="radio" name="q4" id="b4">Pasanger<br>
+<input type="radio" name="q4" id="c4">Passenger<br><br>
+<input type="radio" name="q4" id="d4">Pessenger<br><br><br><br>
+<b>Today most businessmen are very worried. To begin with, they are not used to competition.In the past they sold whatever ...(5)<br>
+... produced at whatever prices they chose. But ...(6)... increasing competition, customers began to ...(7)...<br>
+ and choose. Imports suddenly became ...(8)... available and that too at cheaper ...(9)..<br>
+ <BR>5. (Solve according to above statement)</b>
+<input type="radio" name="q5" id="a5">it<br>
+<input type="radio" name="q5" id="b5">he<br>
+<input type="radio" name="q5" id="c5">they<br>
+<input type="radio" name="q5" id="d5">we<br><br><br><br>
+<b>6.(Solve according to above statement)<br>	</b>
+<input type="radio" name="q6" id="a6">with<br>
+<input type="radio" name="q6" id="b6">by<br>
+<input type="radio" name="q6" id="c6">after<br>
+<input type="radio" name="q6" id="d6">from<br><br><br><br>
+<b>7.(Solve according to above statement)<br>	</b>	
+<input type="radio" name="q7" id="a7">buy;<br>
+<input type="radio" name="q7" id="b7">take<br>
+<input type="radio" name="q7" id="c7">pick<br>
+<input type="radio" name="q7" id="d7">want<br><br><br><br>
+<b>8. (Solve according to above statement)</b><br>	
+<input type="radio" name="q8" id="a8">hardly<br>
+<input type="radio" name="q8" id="b8">easily<br>
+<input type="radio" name="q8" id="c8">frequently<br>
+<input type="radio" name="q8" id="d8">none<br><br><br><br>
+<b>9. (Solve according to above statement)<br>	
+<input type="radio" name="q9" id="a9">cost<br>
+<input type="radio" name="q9" id="b9">returns<br>
+<input type="radio" name="q9" id="c9">dividend<br>
+<input type="radio" name="q9" id="d9">prices<br><br><br><br>
+<b>10. To keeps one's temper<br>	
+<input type="radio" name="q10" id="a10">To be hungry<br>
+<input type="radio" name="q10" id="b10">to be in good mood<br>
+<input type="radio" name="q10" id="c10">NONE<br>
+<input type="radio" name="q10" id="d10">BOTH<br><br><br><br>
+<hr>
+<input type="button" onclick="calc()" value="SUBMIT"style="background-color:#212F3C;cursor:pointer;color:white">
+<input type="reset" value="RESET" style="background-color:#212F3C;cursor:pointer;color:white">
+</form>
+</body>
+</html>

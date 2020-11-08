@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<title>Mathematics UNIT 2</title>
+</title>
+<script>
+function calc()
+{
+var reply=window.confirm("Are you sure you want to submit?");
+if(reply){
+var s=0;var p;var c;
+if(document.getElementById("a1").checked) 
+{s=s+1;}
+if(document.getElementById("b2").checked) 
+{s=s+1;}
+if(document.getElementById("a3").checked) 
+{s=s+1;}
+if(document.getElementById("b4").checked) 
+{s=s+1;}
+if(document.getElementById("c5").checked)
+ {s=s+1;}
+ s=s*2;
+  p=s*10;
+if(s==10)
+{c="Excellent!!";}
+else if(s<10 && s>=9)
+{c="Very Good!!";}
+else if(s<9 && s>=8)
+{c="Good!!";}
+else if(s<8 && s>=7)
+{c="Average!!";}
+else{c="Poor!! Work hard!!";}
+window.alert(c+" Your score is "+p+"%");
+window.open("practice.html","_self");
+}
+}
+</script>
+</head>
+<body bgcolor="#2d3e59" style="color:white;">
+<h1>Mathematics Unit 2</h1><br>
+<hr>
+<form>
+<b>1. The Particular Integral of (D<sup>2</sup> + 6D + 9)y = 5e<sup>3x</sup></b><br>
+<input type="radio" name="q1" id="a1">5e<sup>3x</sup> / 18<br>
+<input type="radio" name="q1" id="b1">e<sup>3x</sup> / 36<br>
+<input type="radio" name="q1" id="c1">5e<sup>3x</sup><br>
+<input type="radio" name="q1" id="d1">5e<sup>3x</sup> / 36<br><br><br>
+<b>2. The Particular Integral of (D<sup>2</sup> + D + 1)y = e<sup>x</sup></b><br>
+<input type="radio" name="q2" id="a2">e<sup>x</sup><br>
+<input type="radio" name="q2" id="b2">e<sup>x/3</sup><br>
+<input type="radio" name="q2" id="c2">e<sup>x<sup>2</sup></sup><br>
+<input type="radio" name="q2" id="d2">e<sup>x/2</sup><br><br><br>
+<b>3. The Particular Integral of (D<sup>2</sup> - 2D + 1)y = e<sup>x</sup></b><br>
+<input type="radio" name="q3" id="a3">x<sup>2</sup>e<sup>x</sup> / 2<br>
+<input type="radio" name="q3" id="b3">xe<sup>x</sup> / 2<br>
+<input type="radio" name="q3" id="c3">x<sup>2</sup>e<sup>x<sup>2</sup></sup> / 4<br>
+<input type="radio" name="q3" id="d3">x<sup>2</sup>e<sup>2x</sup> / 5<br><br><br>
+<b>4. the solution of (D<sup>2</sup> +1)y=0 satisfying initial condition y(0)=1 and y(90<sup><small>0</small></sup>)=2 is:<br>
+<input type="radio" name="q4" id="a4">y=2 cos x + sin x<br>
+<input type="radio" name="q4" id="b4">y=cos x + 2 sin x<br>
+<input type="radio" name="q4" id="c4">y= cos x + sin x<br><br>
+<input type="radio" name="q4" id="d4">y=2 cos x + 2 sin x<br><br><br><br>
+<b>5. The roots of auxilary eqn (D+4)(D+5)(D+10)=0 are: <br>
+<input type="radio" name="q5" id="a5">-4,5,-10<br>
+<input type="radio" name="q5" id="b5">4,5,10<br>
+<input type="radio" name="q5" id="c5">-4,-5,-10<br>
+<input type="radio" name="q5" id="d5">None<br><br><br><br>
+<hr>
+<input type="button" onclick="calc()" value="SUBMIT"style="background-color:#212F3C;cursor:pointer;color:white">
+<input type="reset" value="RESET" style="background-color:#212F3C;cursor:pointer;color:white">
+</form>
+</body>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Educational Counselling System</title>
+    <style type="text/css">
+        img {
+        }
+
+        body {
+            background-image: url(sdsafsg.jpg);
+            background-sizeuu: 1500px;
+        }
+
+         .aa{
+            width: 300px;
+            height: 270px;
+            background-color: rgba(0,0,0,0.5);
+            margin: 0 auto;
+            margin-top: 50px;
+            padding-top: 40px;
+            padding-left: 50px;
+            border-radius: 25px;
+            -webkit-border-radius: 250px;
+            -0-border-radius:250px;
+            -moz-border-radius: 250px;
+            color: white;
+            font-weight: bolder;
+            box-shadow: inset -4px -4px rgba(0,0,0,0.5);
+            font-size: 18px;
+        }
+
+            .aa input[type="text"] {
+                width: 245px;
+                height: 25px;
+                border-radius: 5px;
+                -0-border-radius:5px;
+                -moz-border-radius: 5px;
+                padding-left: 5px;
+            }
+
+            .aa input[type="password"] {
+                width: 245px;
+                height: 25px;
+                border-radius: 5px;
+                -0-border-radius:5px;
+                -moz-border-radius: 5px;
+                padding-left: 5px;
+            }
+
+            .aa input[type="submit"] {
+                width: 100px;
+                height: 35px;
+                border: 0;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -o-border-radius: 5px;
+                -moz-border-radius: 5px;
+                background-color: skyblue;
+                font-weight: bolder;
+            }
+
+            }
+    </style>
+    <script>
+        function ValidateLogin() {
+            var username = document.getElementById('username');
+            var password = document.getElementById('password');
+            if (username.value != '' && password.value != '') {
+                if (username.value == 'K17CQ' && password.value == '12345@A') {
+                    window.location = "w3navigation.html";
+                }
+                else {
+                    alert('Invalid credentials. Please try again.');
+                    username.value = '';
+                    password.value = '';
+                    return false;
+                }
+            }
+            else {
+                if (username.value == '') {
+                    alert('Username is required field.');
+                    username.focus();
+                    return false;
+                }
+                if (password.value == '') {
+                    alert('Password is required field.');
+                    password.focus();
+                    return false;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="logo.jpg" width="150px" height="60px" align="left"><br>
+    <br>
+    <h1>
+        Lovely professional University (Educational counselling system)
+        ph-no(7424905275)
+    </h1>
+    <h1>Phone No-7234974654,9915944466,9340282831</h1>
+    <h1>Website Www.lpu.in</h1>
+    <form>
+        <div class="aa">
+            <h2>Login</h2>
+            <input id="username" type="text" placeholder="please enter username..." required><br><br>
+            <input id="password" type="password" placeholder="please enter password..." required><br><br>
+            <input type="button" onclick="ValidateLogin()" value="Login" step="12345">
+        </div>
+    </form>
+</body>
+</html>

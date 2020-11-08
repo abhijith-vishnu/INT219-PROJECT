@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<title>
+Login In
+</title>
+<style>
+.slideshow{
+max-width:100%;
+max-height:100%;
+width:70%;
+height:100%;
+float:left;
+position:relative;
+margin-right:-1%;
+margin-left:0%;
+}
+.logs
+{
+width:26%;
+height:500px;
+position:relative;
+float:left;
+}
+#l1,#lia
+{
+list-style-type:none;
+display:inline;
+float:left;
+}
+a
+{
+text-decoration:none;
+color:#509afc;
+}
+</style>
+<script>
+function login()
+{
+var n=document.getElementById("ip1").value;
+var p=document.getElementById("ip2").value;
+if(n=="")
+{
+window.alert("User Name Required");
+document.formlog.id.focus();
+}
+else if(p=="")
+{
+window.alert("Password Required");
+document.formlog.p.focus();
+}
+else if((document.getElementById("t").checked)&&(n==p))
+{
+window.alert("Succesully, Logged In As Teacher!!");
+window.open("Homet.html","_self");
+}
+else if((document.getElementById("s").checked)&&(n==p))
+{
+window.alert("Succesully, Logged In As Student!!");
+window.open("Homes.html","_self");
+}
+else
+{
+window.alert("Invalid Username or Password!");
+}
+}
+function openreg()
+{
+window.open("reg.html","_self");
+}
+</script>
+</head>
+<body bgcolor="#f2f5f9"> 
+<div class="slideshow">
+<img src="./images/lms5.jpg" style="width:900px;height:650px;border-right:solid;">
+</div>
+<div class="logs">
+<br>
+<img src="./images/lms10.png" style="width:150px;height:150px;">
+<h3 style="font-size:24px;font-family:Andalus;color:#294263">Log In</h3>
+<form style="font-size:120%;" name="formlog">
+<input type="text" placeholder="Login id" size="50" id="ip1"/><br><br>
+<input type="password" placeholder="Password" value=""  size="50" id="ip2"/><br><br>
+<input type="checkbox" id="ip3"><span style="font-size:14px">Keep me signed in</span><br><br>
+<span style="color:#083168"></span>Login As: <span style="color:#509afc;"><input type="radio" name="r1" id="s" checked="yes">Student &nbsp <input type="radio" name="r1" id="t">Teacher</span>
+<br><br><input type="button" value="Login" onclick="login()" style="background-color:#212F3C;cursor:pointer;color:white;width:100px;height:30px;font-size:18px;font-family:Bodoni MT";>
+<input type="reset" value="Reset" style="background-color:#212F3C;cursor:pointer;color:white;width:100px;height:30px;font-size:18px;font-family:Bodoni MT";>
+</form>
+<br>
+<h3 style="color:#70abf9;cursor:pointer" onmouseover="style.color='#083168'" onmouseout="style.color='#70abf9'" onclick="openreg()"><u>Don't have an account?<br>Sign Up</u></h3>
+<br>&copy 2017 LPU<br>
+<small><ul id="l1"><li id="lia"><a href="terms.html" onmouseover="style.color='#083168'" onmouseout="style.color='#509afc'">Terms and Conditions</a></li>&nbsp &nbsp <li id="lia">&nbsp &nbsp <a href="privacy.html" onmouseover="style.color='#083168'" onmouseout="style.color='#509afc'">Privacy</a></li></ul></small>
+</div>
+</body>
+</html>

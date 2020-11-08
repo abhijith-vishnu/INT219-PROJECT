@@ -1,0 +1,345 @@
+<!doctype html>
+<html>
+<head>
+<title>Seating Plan</title>
+<script>
+
+</script>
+<style media="screen">
+  
+  body {
+    
+  padding: 0;
+
+      margin: 0;
+
+      font-family: Helvetica, Verdana, sans-serif;
+
+      background-color: #C1BABA;
+  
+  }
+  
+  div.container-all {
+     
+ margin: 20px 15%;
+
+      background-color: #FFF;
+
+      box-shadow: 0px 0px 3px rgba(50, 50, 50, 0.3);
+   
+   padding: 2em;
+   
+ }
+   
+ h1 {
+   
+   font-weight: bold;
+
+      padding: 3px;
+
+      color: rgb(30, 30, 30);
+
+      font-family: monospace;
+  
+    text-align: center;
+   
+   font-size: 3em;
+  
+    border-bottom: 2px solid gray;
+    
+  text-shadow: 1px 1px 1px lightslategray;
+   
+ }
+   
+ table {
+
+      width: 90%;
+ 
+     border-collapse: collapse;
+
+      margin: 0 auto;
+   
+   table-layout: fixed;
+  
+    box-shadow: 2px 2px 2px lightslategray;
+   
+ }
+  
+  td, th {
+      
+text-align: center;
+ 
+     padding: 5px;
+
+    }
+    
+th {
+     
+ color: white;
+ 
+     background-color: rgb(80, 80, 80);
+
+    }
+  
+  tr:nth-child(odd) {
+  
+    background-color: rgb(220, 220, 220);
+
+    }
+  
+  tr:nth-child(even) {
+    
+  background-color: rgb(240, 240, 240);
+
+    }
+body,html{
+padding:0;
+margin:0;}
+.h
+{
+background-color:rgba(61, 100, 140,0.5);
+width:101.75%;
+height:100px;
+margin:-25px -25px 0px -25px;
+}
+ul 
+{
+background-color:rgb(0, 86, 119);
+width:98%;
+height:50px;
+margin:0px -15px 0px -15px;
+list-style-type: none;
+overflow: hidden;
+}
+li 
+{
+float: left;
+}
+li a, .dropbtn 
+{
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn 
+{
+background-color:rgb(67, 117, 198);
+}
+li.dropdown 
+{
+display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#FEFCFF;
+    min-width: 160px;
+    }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;<!--For setiing the style in which option will come on clicking Lms Navigation-->
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color:rgb(92, 152, 249);
+color:white
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;<!--For setiing the style in which option will come on clicking Lms Navigation-->
+}
+.main
+{
+height:515px;
+width:100%;
+background-color:#aecbf9;
+display:inline-flex;
+}
+#intro
+{
+top:0px;
+right:0px;
+height:650px;
+width:20%;
+background-color:#ccdfff;
+}
+#shortcut
+{
+height:650px;
+width:80%;
+background-color:#f4f8ff;
+float:center;
+}
+a{
+text-decoration:null;
+color:#FEFCFF;}
+#ca,#mte,#ete,#all{
+  position: absolute;border-radius: 10px;
+  visibility:hidden; ;overflow: hidden;
+}
+#all{left: 28%;}
+#ca{left: 38%;}
+#mte{left: 46%;}
+#ete{left: 40%;}
+</style>
+</head>
+
+<body style="background-size:100%;">
+<div class="h">
+<img src="logo.jpg" style="width:85px;height:55px;float:left;position:realtive;margin-top:35px;margin-left:20px;">
+
+<h2 style="font-size:70px;font-family:Aldhabi;color:#dcefed;text-align:center;float:top;margin-top:15px;size:100%;">
+</div>
+<div class="h2">
+<ul>
+<li class="dropdown">
+   <a href="#" class="dropbtn">LMS Navigation</a>
+   <div class="dropdown-content">
+   <a href="assign.html">Assignment</a>
+   <a href="exam.html">Examination Pattren</a>
+   <a href="seating.html">Examination Seating Plan</a>
+   <a href="feeedback.html">FeedBack</a>
+   
+   <a href="mycourses.html">My Courses</a>
+   
+  
+   <a href="re.html">Registeration</a>
+   <a href="result.html">Results</a>
+
+   
+  <li><a href="library.html">Online Library</a></li>  
+    <li style="float:right"><a class="active" href="LOGINID copy.HTML">Logout</a></li>
+
+    <li style="float:right"><a class="active" href="w3navigation.html">Home</a></li>
+
+      
+    </div>
+
+  
+  </ul>
+</div>
+<div class="main">
+<div id="intro">
+<center>
+<img src="MARK.JPG" id="imglogo" style="height:150px;width:150px;border-radius:40%;margin:10px 50px;">
+<h3 style="text-align:center;color:#373666;margin:20px 30px;font-size:34px;">Name:<h2>Mark zuckerberg<br>K1651</h2></h3>
+
+</center>
+</div>
+<div id="shortcut">
+<div class="container-all">
+     
+
+<h1>Exam Seating Plan</h1>
+   
+   <table>
+        <tr>
+          <th>Course Code</th>
+   
+       <th>Exam Type</th>
+  
+        <th>Room No</th>
+          
+<th>Reporting Time</th>
+     
+     <th>Date</th>
+
+          <th>Time</th>
+        </tr>
+   
+     <tr>
+          <td>PEL131</td>
+      
+    <td>Theory End Term - Mix</td>
+    
+      <td>Awaited</td>
+      
+    <td>09:00</td>
+    
+      <td>09 May 2017</td>
+    
+      <td>09:30-12:30</td>
+     
+   </tr>
+       
+ <tr>
+          <td>MTH166</td>
+    
+      <td>Theory End Term - All MCQ</td>
+     
+     <td>Awaited</td>
+       
+   <td>01:00</td>
+   
+       <td>11 May 2017</td>
+     
+     <td>01:30-04:30</td>
+        </tr>
+  
+      <tr>
+          <td>MEC103</td>
+     
+     <td>Theory End Term - All Subjective</td>
+   
+       <td>Awaited</td>
+    
+      <td>01:00</td>
+     
+     <td>13 May 2017</td>
+     
+     <td>01:30-04:30</td>
+        </tr>
+     
+   <tr>
+          <td>ECE213</td>
+    
+      <td>Theory End Term - Mix</td>
+     
+     <td>Awaited</td>
+  
+        <td>09:00</td>
+    
+      <td>15 May 2017</td>
+    
+      <td>09:30-12:30</td>
+        </tr>
+   
+     <tr>
+          <td>CSE202</td>
+   
+       <td>Theory End Term - Mix</td>
+   
+       <td>Awaited</td>
+    
+      <td>09:00</td>
+   
+       <td>17 May 2017</td>
+     
+     <td>09:30-12:30</td>
+        </tr>
+     
+   <tr>
+          <td>PHY109</td>
+      
+    <td>Theory End Term - Mix</td>
+
+          <td>Awaited</td>
+  
+        <td>01:00</td>
+     
+     <td>19 May 2017</td>
+   
+       <td>01:30-04:30</td>
+     
+   </tr>
+      </table>
+</div>
+</div>
+</body>
+</html>

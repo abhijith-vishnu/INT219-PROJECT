@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+<head>
+<title>Home Page</title>
+<script>
+function back1()
+{
+document.getElementById("teacher").innerHTML="By Neha sharma:";
+document.getElementById("msg").innerHTML="Your Presentation for Lab at home would Be taken in respective tutorials.Be ready for the same.";
+}
+function back()
+{
+document.getElementById("teacher").innerHTML="By Examination Department:";
+document.getElementById("msg").innerHTML="Date sheet for End term Examination Has been uploaded.Follow path LMS Navigation -----> Examination Seating Plan";
+}
+function front()
+{
+document.getElementById("teacher").innerHTML="By Kirti:";
+document.getElementById("msg").innerHTML="List of topic of presentation has been uplaoded.Submission date is 24-april-2017.Come in formal on the day of presentation.";
+}
+function front1()
+{
+document.getElementById("teacher").innerHTML="By Nahita Pathania:";
+document.getElementById("msg").innerHTML="Your CA3 will be held on 7th April.The platform for the test is HackerEarth.Bring your fully charged laptop.";
+}
+</script>
+<style>
+body,html{
+padding:0;
+margin:0;}
+.h
+{
+background-color:rgba(61, 100, 140,0.5);
+width:101.75%;
+height:100px;
+margin:-25px -25px 0px -25px;
+}
+ul 
+{
+background-color:rgb(0, 86, 119);
+width:98%;
+height:50px;
+margin:0px -15px 0px -15px;
+list-style-type: none;
+overflow: hidden;
+}
+li 
+{
+float: left;
+}
+li a, .dropbtn 
+{
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn 
+{
+background-color:rgb(67, 117, 198);
+}
+li.dropdown 
+{
+display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#FEFCFF;
+    min-width: 160px;
+    }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;<!--For setiing the style in which option will come on clicking Lms Navigation-->
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color:rgb(92, 152, 249);
+color:white
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;<!--For setiing the style in which option will come on clicking Lms Navigation-->
+}
+.main
+{
+height:515px;
+width:100%;
+background-color:#aecbf9;
+display:inline-flex;
+}
+#intro
+{
+top:0px;
+right:0px;
+height:650px;
+width:20%;
+background-color:#ccdfff;
+}
+#shortcut
+{
+height:650px;
+width:80%;
+background-color:#f4f8ff;
+float:center;
+}
+</style>
+</head>
+<body style="background-size:100%;">
+<div class="h">
+<img src="logo.jpg" style="width:85px;height:55px;float:left;position:realtive;margin-top:35px;margin-left:20px;">
+<marquee><h1 style="color: #e23a34"> Welcome to LOVELY EDUCATIONAL COUNSELLING, Hope You Like It</h1></marquee>
+<h2 style="font-size:70px;font-family:Aldhabi;color:#dcefed;text-align:center;float:top;margin-top:15px;size:100%;">
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="h2">
+<ul>
+<li class="dropdown">
+   <a href="#" class="dropbtn">Educational  Navigation</a>
+   <div class="dropdown-content">
+   <a href="assign.html">Assignment</a>
+   <a href="exam.html">Examination Pattren</a>
+
+   <a href="feeedback.html">FeedBack</a>
+   
+   <a href="mycourses.html">My Courses</a>
+   
+  
+   <a href="re.html">Registeration</a>
+ 
+
+   </div>
+	<li><a href="library.html">Online Library</a></li>
+	
+	 
+ 
+  <li style="float:right"><a class="active" href="LOGINID copy.HTML">Logout</a></li>
+ <li style="float:right"><a class="active" href="w3navigation.HTML">Home</a></li>
+   
+      
+    </div>
+
+	
+	</ul>
+</div>
+<div class="main">
+<div id="intro">
+<center>
+<img src="MARK.JPG" id="imglogo" style="height:150px;width:150px;border-radius:40%;margin:10px 50px;">
+<h3 style="text-align:center;color:#373666;margin:20px 30px;font-size:34px;">Name: <h2 style="color:#a34234">LOVELY EDUCATIONAL<br>COUNSELLING</h2></h3>
+</center>
+</div>
+<div id="shortcut">
+<p style="padding:15px;margin:70px 100px;background-color:#426972;border:5px solid white;color:#fff2fe;width:40%;height:30%;float:right;">
+<span style="align:center;font-size:35px;font-family:Colonna MT;">My Messages</span><br>
+<span id="teacher" style="font-family:Bell MT;color:#fffedd">By VIRESH KUMAR:</span><br>
+<span id="msg">Education is passport to the future,for tomorrow belongs to those who prepare for it today.</span><br><br><br>
+<img src="arrow1.jpg" style="width:100px;height:70px;align:center;cursor:pointer;" onclick="back()" ondblclick="back1()">
+<img src="arrow.jpg" style="width:100px;height:70px;align:center;float:right;cursor:pointer;" onclick="front()" ondblclick="front1()"></p>
+<table cellpadding="5px" cellspacing="1px" onclick="window.open('time.html','_self')" style="color:white;cursor:pointer;border-collapse:collapse;padding:15px;text-align:center;margin:30px 60px;background-color:#2d3e59;border:5px solid white;">
+<tr style="background-color:#426972;"><td colspan="3"><span style="align:center;font-size:25px;font-family:Colonna MT;">Today's TimeTable</span></td></tr>
+<tr >
+<th>S.NO</th>
+<th>Fields</th>
+<th>NAME</th>
+</tr>
+<tr style="background-color:#426972;"><td>1</td><td>SOFTWARE ARCHITECT</td> <td>BILL GATES</td></tr>
+<tr><td>2.</td><td>SOFTWARE ENGINEER</td><td>SUNDER PICHAI</td></tr>
+<tr style="background-color:#426972;"><td>3.</td><td>ELECTRICAL ENGINEERING</td><td>SATYA NADELA</td></tr>
+<tr><td>4.</td><td>TECHNOLOGY ENTREPRENEUR</td><td>JEFF BEZOS</td></tr>
+<tr style="background-color:#426972;"><td>5.</td><td> ENGINEER</td><td>ELON MUSK</td></tr>
+<tr><td>6.</td><td>ENTREPERNEUR</td><td>BAHVISH AGRAWAL</td></tr>
+
+</table>
+
+</a>
+</div>
+</div>
+</body>
+</html>

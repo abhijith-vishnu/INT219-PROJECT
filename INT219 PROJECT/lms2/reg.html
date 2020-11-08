@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<title>
+New User
+</title>
+<style>
+.slideshow{
+max-width:100%;
+max-height:100%;
+width:70%;
+height:100%;
+float:left;
+position:relative;
+margin-right:-1%;
+margin-left:0%;
+}
+.logs
+{
+width:26%;
+height:500px;
+position:relative;
+float:left;
+}
+#l1,#lia
+{
+list-style-type:none;
+display:inline;
+float:left;
+}
+a
+{
+text-decoration:none;
+color:#509afc;
+}
+input[type=button]
+{
+width:150px;
+}
+input[type=reset]
+{
+width:150px;
+}
+</style>
+<script>
+function reg()
+{
+if(document.form1.first.value=="")
+{
+window.alert("First Name Required");
+document.form1.first.focus();
+}
+else if(document.form1.last.value=="")
+{
+window.alert("Last Name Required");
+document.form1.last.focus();
+}
+else if(document.form1.number.value=="")
+{
+window.alert("Mobile Number field can't be left empty");
+document.form1.number.focus();
+}
+else if(document.form1.email.value=="")
+{
+window.alert("Email field is Required");
+document.form1.pwd.focus();
+}
+else if(document.form1.pwd.value=="")
+{
+window.alert("Password field is Required");
+document.form1.pwd.focus();
+}
+else if(document.form1.cpwd.value=="")
+{
+window.alert("Confirm Password field is Required");
+document.form1.cpwd.focus();
+}
+else if(document.form1.dob.value=="")
+{
+window.alert("Date of Birth field is Required");
+document.form1.dob.focus();
+}
+else if(document.form1.number.value.length!=10)
+{
+window.alert("Enter the valid Mobile Number");
+document.form1.pwd.focus();
+}
+else if(document.form1.email.value.indexOf("@") <=0 || document.form1.email.value.indexOf(".com") <=0)
+
+{
+window.alert("Enter valid Email Id");
+document.form1.email.focus(); 
+}
+else if(document.form1.pwd.value.length<=8)
+{
+window.alert("Enter the strong Password");
+document.form1.pwd.focus();
+}
+else if(document.form1.cpwd.value!=document.form1.pwd.value)
+{
+window.alert("The confirm password field does not match with password");
+document.form1.cpwd.focus();
+}
+else
+{
+window.alert("Your account has been created Successfully.You will be redirected to login page");
+window.open("lms.html","_self");
+}
+}
+</script>
+</head>
+<body bgcolor="#f2f5f9"> 
+<div class="slideshow">
+<img src="./images/lms1.jpg" style="width:900px;height:650px;border-right:solid;">
+</div>
+<div class="logs">
+<br>
+<img src="./images/lms10.png" style="width:150px;height:150px;">
+<h3 style="font-size:24px;font-family:Andalus;color:#294263">Welcome</h3>
+<table cellspacing="5px">
+<form name="form1" method="post">
+<tr><th colspan="2" style="text-align:center;font-family:Monotype Corssiva;Font-size:35px;color:#294343;">Register</th></tr>
+<tr>
+<td><input type="text" name="first" placeholder="First Name" size="23"></td>
+<td><input type="text" name="last" placeholder="Last Name" size="23"></td>
+</tr>
+<tr>
+<td colspan="2"><input type="text" name="number" placeholder="Mobile Number" size="50"></td></tr>
+<tr>
+<td colspan="2"><input type="text" name="email" placeholder="Email id" size="50"></td></tr>
+<tr>
+<td colspan="2"><input type="password" name="pwd" placeholder="Password" size="50"/></td>
+</tr>
+<tr>
+<td colspan="2"><input type="password" name="cpwd" placeholder="Confirm Password" size="50"></td>
+</tr>
+<tr>
+<td style="color:#3d4f6d;font-size:20px;">Date of birth</td>
+<td><input type="text" name="dob" placeholder="DD/MM/YYYY" size="23"></td>
+</tr>
+<tr>
+<td style="color:#3d4f6d;font-size:20px;">Gender</td>
+<td><input type="radio" name="gender" style="cursor:pointer;"><span style="color:r;font-size:18px;">Male</span>
+ &nbsp &nbsp <input type="radio" name="gender" style="cursor:pointer;"><span style="color:r;font-size:18px;">Female</span></td></tr>
+<tr>
+<td><input type="Button" value="Register" name="Register" onclick="reg()" style="background-color:#212F3C;cursor:pointer;color:white;font-size:18px;font-family:Badoni MT;"></td>
+<td><input type="Reset" name="Reset" style="background-color:#212F3C;cursor:pointer;color:white;font-size:18px;font-family:Badoni MT;"></td>
+</tr>
+</form>
+</table>
+<br>&copy 2017 LPU<br>
+<small><ul id="l1"><li id="lia"><a href="terms.html" onmouseover="style.color='#083168'" onmouseout="style.color='#509afc'">Terms and Conditions</a></li>&nbsp &nbsp <li id="lia">&nbsp &nbsp <a href="privacy.html" onmouseover="style.color='#083168'" onmouseout="style.color='#509afc'">Privacy</a></li></ul></small>
+</div>
+</body>
+</html>

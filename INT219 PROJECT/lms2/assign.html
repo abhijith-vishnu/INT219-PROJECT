@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<title>MOVIES</title>
+<script>
+</script>
+<style>
+body,html{
+padding:0;
+margin:0;}
+.h
+{
+background-color:rgba(61, 100, 140,0.5);
+width:101.75%;
+height:100px;
+margin:-25px -25px 0px -25px;
+}
+ul 
+{
+background-color:rgb(0, 86, 119);
+width:98%;
+height:50px;
+margin:0px -15px 0px -15px;
+list-style-type: none;
+overflow: hidden;
+}
+li 
+{
+float: left;
+}
+li a, .dropbtn 
+{
+display: inline-block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn 
+{
+background-color:rgb(67, 117, 198);
+}
+li.dropdown 
+{
+display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#FEFCFF;
+    min-width: 160px;
+    }
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;<!--For setiing the style in which option will come on clicking Lms Navigation-->
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color:rgb(92, 152, 249);
+color:white
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;<!--For setiing the style in which option will come on clicking Lms Navigation-->
+}
+.main
+{
+height:515px;
+width:100%;
+background-color:#aecbf9;
+display:inline-flex;
+}
+#intro
+{
+top:0px;
+right:0px;
+height:650px;
+width:20%;
+background-color:#ccdfff;
+}
+#shortcut
+{
+height:650px;
+width:80%;
+background-color:#f4f8ff;
+float:center;
+}
+</style>
+</head>
+<body style="background-size:100%;">
+<div class="h">
+<img src="logo.jpg" style="width:85px;height:55px;float:left;position:realtive;margin-top:35px;margin-left:20px;">
+<marquee><h1 style="color: #e23a34"> Welcome to LOVELY ONLINE MOVIE BOOKING SYSTEM, Hope You Like It</h1></marquee>
+<h2 style="font-size:70px;font-family:Aldhabi;color:#dcefed;text-align:center;float:top;margin-top:15px;size:100%;">
+
+</div>
+<div class="h2">
+<br>
+<br>
+<br>
+<ul>
+
+	 
+<li class="dropdown">
+   <a href="#" class="dropbtn"> Navigation</a>
+   <div class="dropdown-content">
+   <a href="assign.html">Assignment</a>
+   <a href="exam.html">fields related to streams</a>
+   <a href="feeedback.html">FeedBack</a>
+   
+   <a href="mycourses.html">My Courses</a>
+   
+   
+   <a href="re.html">Registeration</a>
+  
+   
+   </div>
+	<li><a href="http://www.justwatch.com/">Online Movie Search</a></li>
+	
+	  
+    </li><li style="float:right"><a class="active" href="LOGINID copy.HTML">Logout</a></li>
+</li><li style="float:right"><a class="active" href="w3navigation.HTML">Home</a></li>
+
+   
+   
+	
+</div>
+
+<div class="main">
+<div id="intro">
+<center>
+<img src="the.JPG" id="imglogo" style="height:150px;width:150px;border-radius:40%;margin:10px 50px;">
+<h3 style="text-align:center;color:#373666;margin:20px 30px;font-size:34px;">Name:<h2>LOVELY EDUCATION COUNSELLING <br></h2></h3>
+
+</center>
+</div>
+<div id="shortcut">
+<h1 style="text-align:center;color:#520059;font-family:Bell MT;">EDUCATIONAL COURSES</h1>
+<table style="text-align:center;margin:40px 120px;width:75%;" border="1" >
+<tr>
+<td colspan="4"><span style="align:center;font-size:35px;font-family:Colonna MT;">Select The Course</span></td>
+</tr>
+<tr style="background-color:#426972;"><td><span style="font-family:Bell MT;color:#fffedd;font-size:25px;">S.no</span></td><td><span style="font-family:Bell MT;color:#fffedd;font-size:25px">Course Name</span></td><td colspan="2"><span style="font-family:Bell MT;color:#fffedd;font-size:25px">Options</span></td></tr>
+<tr><td>1.</td><td>Science</td><td>ENGINEERING,P.HD,M.SC,IAS</td><td><img src="images-05.jpg" style="width:75px;height:35px;" onclick="document.getElementById('doit').innerHTML='Sorry,No Records to display for CSE202'"></td></tr>
+<tr><td>2.</td><td>Commerce</td><td>CA,IAS,PES<td><img src="images-06.jpg" style="width:75px;height:35px;" onclick="document.getElementById('doit').innerHTML='Sorry,No Records to display for MTH166'"></td></tr>
+<tr><td>3.</td><td>Arts</td><td>IFS,IAS,IPS,ASTROLOGER</td><td><img src="images-04.jpg" style="width:75px;height:35px;" onclick="document.getElementById('doit').innerHTML='Sorry,No Records to display for PHY119'"></td></tr>
+<tr><td>4.</td><td>Physical Education</td><td>PHYSICAL BASE EDUCATION</td><td><img src="images-02.jpg" style="width:75px;height:35px;" onclick="document.getElementById('doit').innerHTML='Sorry,No Records to display for ECE213'"></td></tr>
+<tr><td>5.</td><td>Journalism</td><td>MEDIA,ANCHOR,REPORTER</td><td><img src="images-07.jpg" style="width:75px;height:35px;" onclick="document.getElementById('doit').innerHTML='Sorry,No Records to display for PEL 131'"></td></tr>
+<tr><td>6.</td><td>Entrepreneurship</td><td>BUSINESS-MAN</td><td><img src="images-11.jpg" style="width:75px;height:35px;" onclick="document.getElementById('doit').innerHTML='Sorry,No Records to display for CSE101'"></td></tr>
+</table>
+<center>
+<p id="doit"></p>
+</center>
+</div>
+</div>
+</body>
+</html>
